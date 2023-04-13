@@ -35,7 +35,6 @@ const NavBar = () => {
     // handleLogin().then((res) => console.log(res));
     // if (!isLogin) window.location.href = "http://localhost:5555/api/user/login";
     if (!isLogin) window.location.href = process.env.REACT_APP_BASE_URL + "/user/login";
-    // if (!isLogin) window.location.href = "https://j8a403.p.ssafy.io/api/user/login";
     else {
       handleLogout().then(() => {
         localStorage.clear();

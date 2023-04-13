@@ -134,7 +134,6 @@ public class MusicService {
 		
 		System.out.println("End upload");
 //		WARN 14280 --- [nio-5555-exec-1] s.w.m.s.StandardServletMultipartResolver : Failed to perform cleanup of multipart items
-//		C:\Users\SSAFY\AppData\Local\Temp\tomcat.5555.6401783967014632574\work\Tomcat\localhost\api\ upload_c84fc623_5e93_45cd_b1b0_ae7e377fa2d4_00000000.tmp
 		musicContainerList = MP3MetadataService.extractMetadataFromMultipartFileList(res[1], multipartFiles);
 
 
@@ -167,7 +166,7 @@ public class MusicService {
 		RestTemplate restTemplate = new RestTemplate();
 		String response = "";
 
-		String url = "https://j8a403.p.ssafy.io/django/api/mix";
+		String url = "https://secret/django/api/mix";
 		String data = "{ \"music_path\" : \"" + music_path + "\", \"preset_path\" : \"" + preset_path + "\"}";
 
 		try {
@@ -242,7 +241,7 @@ public class MusicService {
 			System.out.println("music_path : " + music_path);
 			String response = "";
 
-			String url = "https://j8a403.p.ssafy.io/django/api/mix/inst";
+			String url = "https://secret/django/api/mix/inst";
 			String data = "{ \"music_path\" : \"" + music_path + "\"}";
 
 			try {

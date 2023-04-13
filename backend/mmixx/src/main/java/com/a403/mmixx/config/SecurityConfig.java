@@ -82,7 +82,7 @@ public class SecurityConfig {
                 .and()
                 .logout()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("https://j8a403.p.ssafy.io") // 로그아웃 이후 연결 페이지
+                .logoutSuccessUrl("https://secret") // 로그아웃 이후 연결 페이지
 //                .logoutSuccessUrl("http://localhost:3000") // 로그아웃 이후 연결 페이지
                 .invalidateHttpSession(true)
 
@@ -112,7 +112,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
 //        configuration.addAllowedOriginPattern("*");
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000", "https://j8a403.p.ssafy.io"));
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000", "https://secret"));
 
         configuration.addAllowedHeader("Authorization");
         configuration.addAllowedHeader("Content-Type");

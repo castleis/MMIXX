@@ -71,8 +71,8 @@ const Mix = () => {
       <p> 원하는 프리셋을 선택하세요. </p>
       <Carousel children={PresetCard} height={"40vh"} width={"60vw"} xOrigin={100} yOrigin={0} yRadius={0} autoPlay={false}>
         {/* 컴포넌트 반복 코드 */}
-        {/* <div key={1} style={{width: 400, height: 250}}> */}
-        {/* { presetData && presetData.map((preset) =>  {
+        <div key={1} style={{width: 400, height: 250}}>
+        { presetData && presetData.map((preset) =>  {
           console.log('preset :' ,preset)
           return (
             <div onClick={() => setPresetSeq(preset.presetSeq)}>
@@ -91,9 +91,9 @@ const Mix = () => {
               ></PresetCard>
             </div>
               )
-            })} */}
-        {/* </div> */}
-        <div key={2} style={presetStyle}>
+            })}
+        </div>
+        {/* <div key={2} style={presetStyle}>
           <PresetCard
             presetSeqFunc={presetSeqFunc}
             presetName='편안한'
@@ -162,7 +162,7 @@ const Mix = () => {
             coverImage="https://bucket-mp3-file-for-mmixx.s3.ap-northeast-2.amazonaws.com/images/man.PNG"
             selNum = {presetSeq}
           ></PresetCard>
-        </div>
+        </div> */}
       </Carousel>
       
       <ButtonStyle>

@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<a href="https://j8a403.p.ssafy.io/">
+<a href="https://secret/">
 <img src = "readme_contents/empty.png" width="120" height="128">
 <img src = "readme_contents/mmixx_icon_black.png" width="128" height="128">
 <br>
