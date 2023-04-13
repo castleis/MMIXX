@@ -1,0 +1,7 @@
+cloud:
+  aws:
+    s3:
+      bucket: bucket-mp3-file-for-mmixx
+    credentials:
+      access-key: AKIAY2NHL6NEZDLXTAF3
+      secret-key: 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
